@@ -4,7 +4,7 @@ const textHandler = require('./textResponses.js');
 const jsonHandler = require('./jsonResponses.js');
 const imageHandler = require('./imageResponses.js');
 
-const port = process.eventNames.PORT || process.env.NODE_PORT || 3000;
+const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const onRequest = (request, response) => {
   console.log(request.url);
